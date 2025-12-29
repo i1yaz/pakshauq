@@ -244,24 +244,24 @@ h3{
 /* navbar text color, Home , Clubs, New etc */
 /* Navbar link color */
 .navbar.bg-navbar .nav-link {
-    color: black!important; /* your desired color */
+    color: white!important; 
 }
 
 /* On hover/focus */
 .navbar.bg-navbar .nav-link:hover,
 .navbar.bg-navbar .nav-link:focus {
-    color: black!important;
+    color: white!important;
 }
 
 /* Active link */
 .navbar.bg-navbar .nav-item.active .nav-link,
 .navbar.bg-navbar .nav-link.active {
-    color: black!important;
+    color: white!important;
 }
 /* change color of car */
 .card-header.shadow-lg {
-    color: black!important; /* black */
+    color: white!important; /* black */
 }
 .text-color {
-    color: black!important; /* black */
+    color: white!important; /* black */
 }
