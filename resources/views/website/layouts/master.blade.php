@@ -51,11 +51,7 @@
                 $images[] = asset('uploads/' . $tournament->poster);
             }
 
-            if (
-                empty($images) &&
-                isset($sliders) &&
-                $sliders->count()
-            ) {
+            if (empty($images) && isset($sliders) && $sliders->count()) {
                 foreach ($sliders as $slider) {
                     if (!empty($slider->slider)) {
                         $images[] = asset('website/sliders/' . $slider->slider);
@@ -81,15 +77,16 @@
                         </div>
                     @endforeach
                 </div>
-
-                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                @if (count($images) > 1)
+                    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                @endif
             </div>
         @endif
 
