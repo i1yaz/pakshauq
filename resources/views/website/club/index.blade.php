@@ -6,7 +6,7 @@
     <div class="container-fluid content">
         <div class="card card-primary card-tabs">
             {{-- Info:Tournament Tab header --}}
-            <div class="card-header  shadow-lg text-light">
+            <div class="card-header shadow-lg text-color">
                 <h3>{{ $club->name}}</h3>
             </div>
             {{-- Tournament Detail  --}}

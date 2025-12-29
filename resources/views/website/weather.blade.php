@@ -5,7 +5,7 @@
 @section('content')
     <div class="container-fluid content">
         <div class="card card-primary card-tabs">
-            <div class="card-header  shadow-lg text-light">
+            <div class="card-header shadow-lg text-color">
             </div>
             {{-- Tournament Detail  --}}
             <div class="card-body">
