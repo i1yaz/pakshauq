@@ -120,7 +120,12 @@ class WebsiteController extends Controller
     }
     public function isTodayFlyingDay($tournament)
     {
-        $flyingDays = $tournament->flyingDays();
+        $flyingDays = $tournament?->flyingDays();
+  
+        if (!$flyingDays) {
+            
+            return date("Y-m-d");
+        }
         $now = date("Y-m-d");
         $flyingDays = $flyingDays->pluck('date')->ToArray();
         $match = in_array($now, $flyingDays);

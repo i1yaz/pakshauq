@@ -48,17 +48,13 @@
             $images = [];
 
             if (isset($tournament) && $tournament->poster) {
-                if ($tournament->created_at->gt(\Carbon\Carbon::parse('2025-12-27'))) {
-                    $images[] = asset('uploads/' . $tournament->poster);
-                }
+                $images[] = asset('uploads/' . $tournament->poster);
             }
 
             if (
                 empty($images) &&
                 isset($sliders) &&
-                $sliders->count() &&
-                isset($tournament) && 
-                $tournament->created_at->lte(\Carbon\Carbon::parse('2025-12-27'))
+                $sliders->count()
             ) {
                 foreach ($sliders as $slider) {
                     if (!empty($slider->slider)) {
