@@ -13,16 +13,6 @@ body {
     text-align: center;
     margin: 10px auto 20px;
 }
-.submenu .btn-submenu {
-    color: #007bff;
-    border-color: #007bff;
-}
-.submenu .btn-submenu.active,
-.submenu .btn-submenu:hover {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
 .content {
     min-width: 1050px;
 }
@@ -264,4 +254,16 @@ h3{
 }
 .text-color {
     color: white!important; /* black */
+}
+
+
+.submenu .btn-submenu {
+    color: rgba(63,0,255);
+    border-color: rgba(63,0,255);
+}
+
+.submenu .btn-submenu.active,.submenu .btn-submenu:hover {
+    color: #fff;
+    background-color: rgba(63,0,255);
+    border-color: rgba(63,0,255);
 }
